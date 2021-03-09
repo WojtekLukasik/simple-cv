@@ -19,6 +19,57 @@ a {
   padding-bottom: 100px;
 }
 
+@media only screen and (min-width: 470px) {
+  .header {
+    font-size: 4em;
+    color: black;
+  }
+  .header::before {
+    transform: translate(-88%, 90px);
+  }
+  .header::after {
+    transform: translate(88%, -70px);
+  }
+  .section-info {
+    font-size: 1.5em;
+    min-width: 400px;
+  }
+  .section-info header {
+    font-size: 2em;
+  }
+  .span-bold-big {
+    font-size: 1.5em;
+  }
+  .footer {
+    font-size: 1.5em;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .header {
+    font-size: 2em;
+  }
+  .header::before {
+    transform: translate(-100%, 50px);
+  }
+  .header::after {
+    transform: translate(100%, -32px);
+  }
+  .section-info {
+    font-size: 1em;
+    min-width: 300px;
+  }
+  .section-info header {
+    font-size: 1em;
+  }
+  .span-bold-big {
+    font-size: 1.5em;
+  }
+  .footer {
+    font-size: 1em;
+  }
+}
+
 .header {
   font-family: "Lobster", cursive;
   width: 100%;
@@ -26,7 +77,6 @@ a {
   margin-top: 0.5em;
   display: flex;
   flex-direction: column;
-  font-size: 4em;
   align-items: center;
   justify-content: center;
   color: hsl(60, 100%, 80%);
@@ -38,7 +88,6 @@ a {
   width: 35vw;
   height: 2px;
   background-color: hsl(60, 100%, 80%);
-  transform: translate(-88%, 85px);
 }
 
 .header::after {
@@ -47,14 +96,13 @@ a {
   width: 35vw;
   height: 2px;
   background-color: hsl(60, 100%, 80%);
-  transform: translate(88%, -75px);
 }
 
 .section-info {
   margin-top: 2em;
   width: 60%;
   max-width: 60%;
-  min-width: 400px;
+
   height: auto;
   padding: 1em;
   border: 2px solid hsl(60, 100%, 80%);
@@ -62,12 +110,12 @@ a {
   color: white;
   display: flex;
   flex-direction: column;
-  font-size: 1.5em;
+  /* font-size: 1.5em; */
   box-shadow: 1em 1em hsl(0, 0%, 30%);
 }
 
 .section-info header {
-  font-size: 2em;
+  /* font-size: 2em; */
   margin-bottom: 0.5em;
   font-weight: bold;
   color: hsl(60, 100%, 80%);
@@ -85,12 +133,11 @@ a {
 .span-bold-big {
   font-weight: bold;
   color: hsl(60, 100%, 80%);
-  font-size: 1.5em;
 }
 footer {
   width: 60%;
   max-width: 60%;
-  min-width: 400px;
+  min-width: 300px;
   color: white;
   margin-top: 4em;
   display: flex;

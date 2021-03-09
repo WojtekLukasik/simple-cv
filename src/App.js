@@ -30,7 +30,7 @@ function App() {
           Moim celem jest rozpoczęcie pracy w branży IT przed zakończeniem
           studiów inżynierskich. Nie posiadam komercyjnego doświadczenia jako
           programista, ale jestem zdeterminowany do nauki i rozwoju. Dodatkowo
-          praca w branży gastronomicznej przyzwyczaiła mnie do pracy w
+          praca w branży gastronomicznej nauczyła mnie koordynacji w
           wieloosobowych i wielojęzycznych zespołach. <br />
           <br />
           Najbardziej interesuję się tworzeniem aplikacji oraz stron
@@ -118,7 +118,7 @@ function App() {
         <span className="span-bold-big">To Do App</span>
         <span>
           {" "}
-          Prosta aplikacja służąca do zarządzania lista zadań. Pozwala tworzyć
+          Prosta aplikacja służąca do zarządzania listą zadań. Pozwala tworzyć
           zadania, ustalać deadline, dodawać opisy oraz zarządzać stworzonymi
           zadaniami.
         </span>
