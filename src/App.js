@@ -1,6 +1,7 @@
 import "./App.css";
+import pdf from "./cv-download/CV-PL.pdf";
 
-function App() {
+const App = () => {
   return (
     <div className="container">
       <header className="header">
@@ -9,19 +10,33 @@ function App() {
       </header>
       <section className="section-info">
         <header>KONTAKT</header>
-        <span>E-mail: wojtek.lukasik@yahoo.pl</span>
-        <span>E-mail studencki: wojluk1@st.amu.edu.pl </span>
-        <span>Nr telefonu: 881 777 922 </span>
         <span>
-          {" "}
+          E-mail:
+          <a href="mailto: wojtek.lukasik@yahoo.pl"> wojtek.lukasik@yahoo.pl</a>
+        </span>
+        <span>
+          E-mail studencki:
+          <a href="mailto: wojtek.lukasik@yahoo.pl"> wojluk1@st.amu.edu.pl</a>
+        </span>
+        <span>
+          Nr telefonu:
+          <a href="tel:+48881 777 922"> 881 777 922 </a>
+        </span>
+        <span>
+          Github:
           <a
             href="https://github.com/WojtekLukasik"
             target="_blank"
             rel="noreferrer"
           >
             {" "}
-            Github: https://github.com/WojtekLukasik{" "}
+            https://github.com/WojtekLukasik{" "}
           </a>{" "}
+        </span>
+        <span>
+          <a href={pdf} target="_blank" rel="noreferrer">
+            CV w wersji PDF
+          </a>
         </span>
       </section>
       <section className="section-info">
@@ -118,7 +133,7 @@ function App() {
         <span className="span-bold-big">To Do App</span>
         <span>
           {" "}
-          Prosta aplikacja służąca do zarządzania listą zadań. Pozwala tworzyć
+          Prosta aplikacja służąca do obsługi listy zadań. Pozwala tworzyć
           zadania, ustalać deadline, dodawać opisy oraz zarządzać stworzonymi
           zadaniami.
         </span>
@@ -182,6 +197,6 @@ function App() {
       </footer>
     </div>
   );
-}
+};
 
 export default App;
