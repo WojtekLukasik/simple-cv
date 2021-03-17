@@ -14,10 +14,7 @@ const App = () => {
           E-mail:
           <a href="mailto: wojtek.lukasik@yahoo.pl"> wojtek.lukasik@yahoo.pl</a>
         </span>
-        <span>
-          E-mail studencki:
-          <a href="mailto: wojtek.lukasik@yahoo.pl"> wojluk1@st.amu.edu.pl</a>
-        </span>
+
         <span>
           Nr telefonu:
           <a href="tel:+48881 777 922"> 881 777 922 </a>
